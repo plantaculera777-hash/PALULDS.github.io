@@ -1,0 +1,228 @@
+.chakra-petch-light {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.chakra-petch-regular {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.chakra-petch-medium {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.chakra-petch-semibold {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.chakra-petch-bold {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.chakra-petch-light-italic {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.chakra-petch-regular-italic {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.chakra-petch-medium-italic {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.chakra-petch-semibold-italic {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.chakra-petch-bold-italic {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* ═══════════════════════════════════════
+   RESET
+═══════════════════════════════════════ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ 
+/* ═══════════════════════════════════════
+   VARIABLES
+═══════════════════════════════════════ */
+:root {
+  --red:    #EC2C2C;
+  --white:  #FFFFFF;
+  --dark:   #303030;
+  --yellow: #FFD800;
+}
+ 
+/* ═══════════════════════════════════════
+   BASE
+═══════════════════════════════════════ */
+body {
+  font-family: sans-serif;
+  background: var(--white);
+  color: var(--dark);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+ 
+/* ═══════════════════════════════════════
+   HEADER
+═══════════════════════════════════════ */
+header {
+  background: var(--red);
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+}
+ 
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+ 
+.header-logo img {
+  height: 36px;
+  width: auto;
+  filter: brightness(0) invert(1);
+}
+ 
+.header-logo span {
+  color: var(--white);
+  font-size: 24px;
+  letter-spacing: 0.08em;
+}
+ 
+/* ═══════════════════════════════════════
+   MAIN
+═══════════════════════════════════════ */
+main {
+  flex: 1;
+  padding: 0 ;
+  display: flex;
+  flex-direction: column;
+  background-position: justify;
+  background: fixed;
+}
+
+#hero {
+  display: flex;
+  flex: 1;
+  background: #808080;
+  padding: 80px 40px;
+  margin-bottom: auto;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  align-content: start;
+}
+
+.hero-text {
+  color: var(--white);
+  text-align: justify;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hero-button {
+  padding: 10px 20px;
+  background: var(--yellow);
+  color: var(--red);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  border-color: var(--red);
+  border-style: solid;
+  transition: background 0.3s ease;
+}
+
+.hero-button:hover {
+  background: var(--red);
+  color: var(--yellow);
+}
+
+#sobre-mi {
+  display: flex;
+  background: var(--white);
+  padding: 80px 40px;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sobre-mi-content {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+}
+
+.foto {
+  width: 75%;
+  height: auto;
+}
+
+/* ═══════════════════════════════════════
+   FOOTER
+═══════════════════════════════════════ */
+footer {
+  background: var(--dark);
+  padding: 20px 40px;
+}
+ 
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  color: var(--white);
+}
+ 
+.footer-content a {
+  color: var(--white);
+  font-size: 30px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+ 
+.footer-content a:hover {
+  color: var(--yellow);
+}
+ 
+/* ═══════════════════════════════════════
+   RESPONSIVE
+═══════════════════════════════════════ */
+@media (max-width: 768px) {
+  header { padding: 16px 20px; }
+  #hero   { padding: 24px 20px; }
+  #sobre-mi  { padding: 24px 20px; }
+  footer { padding: 16px 20px; }
+}
